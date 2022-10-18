@@ -3,125 +3,100 @@
   margin: 0;
   padding: 0;
 }
-body, button{
+body{
   font-family: 'Big Shoulders Display', cursive;
 }
-@media screen and (min-width: 375px) {
-  .container{
+.container{
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+}
+header .top{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  padding: 10px 0;
+  background: rgba(2, 2, 33, 0.327);
 }
-div{
-  height: 450px;
-  width: 300px;
-  padding: 40px;
+figure{
+  width: 30%;
+  padding: 10px 80px;
 }
-.container, h1{
-  color: hsl(0, 0%, 95%);
+nav{
+  width: 50%;
 }
-h1{
-  padding: 20px 0;
-  text-transform: uppercase;
-}
-p{
-  padding: 20px 0;
-  font-size: 15px;
-  text-align: left;
-  width: 90%;
-}
-button{
-  font-size: 15px;
-  border: 2px solid hsl(0, 0%, 95%);
-  background-color: none;
-  width: 120px;
-  height: 45px;
-  margin-top: 70px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0);
-  color: hsl(0, 0%, 95%);
-  cursor: pointer;
-}
-button:hover{
-  background: rgba(0, 0, 0, 0.178);
-}
-.sedans{
-  background: hsl(31, 77%, 52%);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.suvs{
-  background: hsl(184, 100%, 22%);
-}
-.luxury{
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: hsl(179, 100%, 13%);
-}
-
-
-
-
-}
-@media screen and (max-width: 375px) {
-  .container{
-  width: 100vw;
-  min-height: 100vh;
+nav ul{
+  list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  height: 100%;
 }
-div{
-  height: 85%;
-  width: 300px;
-  padding: 40px;
-  border: 3px solid red;
+nav ul li{
+  width: 20%;
 }
-.container, h1{
-  color: hsl(0, 0%, 95%);
+nav ul li a{
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+  color: black;
 }
-h1{
-  padding: 20px 0;
-  text-transform: uppercase;
+a:hover{
+  background-color: rgba(21, 21, 90, 0.296);
+  color: gold;
+  border-radius: 5px;
 }
-p{
-  padding: 20px 0;
-  font-size: 15px;
-  text-align: left;
-}
-button{
-  font-size: 15px;
-  border: 2px solid hsl(0, 0%, 95%);
-  background-color: none;
-  width: 120px;
-  height: 45px;
-  margin-top: 65px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0);
-  color: hsl(0, 0%, 95%);
-  cursor: pointer;
-}
-button:hover{
-  background: rgba(0, 0, 0, 0.178);
-}
-.sedans{
-  background: hsl(31, 77%, 52%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  align-self: flex-end;
+a:active{
+  color: red;
 }
 
-.suvs{
-  background: hsl(184, 100%, 22%);
+main{
+  width: 100%;
+  height: 90.7%;
+  background: rgba(50, 0, 50, 0.182);
+  display: flex;
 }
-.luxury{
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: hsl(179, 100%, 13%);
-  align-self: flex-start;
+section{
+  width: 50%;
+  display: grid;
+  place-items: center;
 }
+article{
+  border-left: 4px solid rgb(7, 7, 38);
+  width: 80%;
+  height: 20%;
+  padding-left: 20px;
+}
+article h1{
+  font-size: 40px;
+  padding: 5px 0;
+}
+article p{
+  padding: 10px 0;
+}
+article button{
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 166, 0, 0.237);
+  color: black;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+article button:hover{
+  border: 1px solid orange;
+  background: none;
+  color: red;
+}
+
+section figure{
+  width: 80%;
+  height: 60%;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: rgba(255, 165, 0, 0.1);
+}
+figure img{
+  border-radius: 50%;
 }
